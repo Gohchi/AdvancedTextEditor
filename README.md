@@ -1,4 +1,4 @@
-# Simple text editor
+# Advance text editor
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 ## Initial setup

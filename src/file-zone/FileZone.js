@@ -6,7 +6,7 @@ class FileZone extends Component {
         return (
             <div id="file-zone">
                 <div id="file">
-
+                    {this.props.file}
                 </div>
             </div>
         );

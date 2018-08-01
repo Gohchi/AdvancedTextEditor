@@ -5,20 +5,32 @@ import FileZone from "./file-zone/FileZone";
 import getMockText from './text.service';
 
 class App extends Component {
+    constructor(){
+        super()
+        this.state = {
+            file: ''
+        }
+        this.getText = this.getText.bind(this)
+    }
+    componentDidMount(){
+        this.getText()
+    }
     getText() {
-        getMockText().then(function (result) {
-            console.log(result);
+        getMockText().then((result) => {
+            this.setState({
+                file: result
+            });
         });
     }
     render() {
         return (
             <div className="App">
                 <header>
-                    <span>Simple Text Editor</span>
+                    <span>Advance Text Editor</span>
                 </header>
                 <main>
                     <ControlPanel/>
-                    <FileZone/>
+                    <FileZone file={this.state.file}/>
                 </main>
             </div>
         );
