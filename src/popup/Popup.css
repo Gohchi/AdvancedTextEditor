@@ -1,0 +1,19 @@
+#popup {
+    background-color:#c8ecff;
+    padding: 5px;
+    display: inline;     
+    position: absolute;
+    border: 1px solid;
+}
+#popup.hidden {
+    display: none;
+}
+#popup li {
+    cursor: pointer;
+}
+#popup li:hover {
+    font-weight: bold;
+}
+#popup .cancel {
+    color: red;
+}

@@ -9,6 +9,10 @@ class ControlPanel extends Component {
                     <button className="format-action" type="button" onClick={this.props.textToBold}><b>B</b></button>
                     <button className="format-action" type="button" onClick={this.props.textToItalic}><i>I</i></button>
                     <button className="format-action" type="button" onClick={this.props.textToUnderline}><u>U</u></button>
+                    <button className="format-action" type="button" 
+                        onClick={this.props.findSynonyms}>
+                        Synonyms
+                    </button>
                 </div>
             </div>
         );
